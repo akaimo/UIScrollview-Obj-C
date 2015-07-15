@@ -14,6 +14,10 @@
 		998A6CC61B56634100E938A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998A6CC51B56634100E938A4 /* Images.xcassets */; };
 		998A6CC91B56634100E938A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998A6CC71B56634100E938A4 /* LaunchScreen.xib */; };
 		998A6CD51B56634100E938A4 /* UIScrollviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 998A6CD41B56634100E938A4 /* UIScrollviewTests.m */; };
+		998A6CDF1B56637100E938A4 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 998A6CDE1B56637100E938A4 /* 1.jpg */; };
+		998A6CE31B56637D00E938A4 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 998A6CE01B56637D00E938A4 /* 2.jpg */; };
+		998A6CE41B56637D00E938A4 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 998A6CE11B56637D00E938A4 /* 3.jpg */; };
+		998A6CE51B56637D00E938A4 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 998A6CE21B56637D00E938A4 /* 4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		998A6CCE1B56634100E938A4 /* UIScrollviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIScrollviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		998A6CD31B56634100E938A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		998A6CD41B56634100E938A4 /* UIScrollviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollviewTests.m; sourceTree = "<group>"; };
+		998A6CDE1B56637100E938A4 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = ../../../../Downloads/1.jpg; sourceTree = "<group>"; };
+		998A6CE01B56637D00E938A4 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = ../../../../Downloads/2.jpg; sourceTree = "<group>"; };
+		998A6CE11B56637D00E938A4 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = ../../../../Downloads/3.jpg; sourceTree = "<group>"; };
+		998A6CE21B56637D00E938A4 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = ../../../../Downloads/4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		998A6CB71B56634100E938A4 /* UIScrollview */ = {
 			isa = PBXGroup;
 			children = (
+				998A6CE61B56638700E938A4 /* image */,
 				998A6CBC1B56634100E938A4 /* AppDelegate.h */,
 				998A6CBD1B56634100E938A4 /* AppDelegate.m */,
 				998A6CBF1B56634100E938A4 /* ViewController.h */,
@@ -117,6 +126,17 @@
 				998A6CD31B56634100E938A4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		998A6CE61B56638700E938A4 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				998A6CDE1B56637100E938A4 /* 1.jpg */,
+				998A6CE01B56637D00E938A4 /* 2.jpg */,
+				998A6CE11B56637D00E938A4 /* 3.jpg */,
+				998A6CE21B56637D00E938A4 /* 4.jpg */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				998A6CC41B56634100E938A4 /* Main.storyboard in Resources */,
+				998A6CE51B56637D00E938A4 /* 4.jpg in Resources */,
+				998A6CDF1B56637100E938A4 /* 1.jpg in Resources */,
+				998A6CE31B56637D00E938A4 /* 2.jpg in Resources */,
+				998A6CE41B56637D00E938A4 /* 3.jpg in Resources */,
 				998A6CC91B56634100E938A4 /* LaunchScreen.xib in Resources */,
 				998A6CC61B56634100E938A4 /* Images.xcassets in Resources */,
 			);
