@@ -11,12 +11,15 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+@property (nonatomic) CGFloat pWidth;
+@property (nonatomic) CGFloat pHeight;
+
 @end
 
 // ページの高さ
-const CGFloat pHeight = 210.0;
+//const CGFloat pHeight = 300.0;
 // ページの幅
-const CGFloat pWidth  = 375.0;
+//const CGFloat pWidth  = 375.0;
 // Totalのページ数
 const NSUInteger pNum = 4;
 
@@ -25,6 +28,9 @@ const NSUInteger pNum = 4;
 // 画像のframeサイズ取得とScrollViewへ追加
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _pWidth = [[UIScreen mainScreen] bounds].size.width;
+    _pHeight = _pWidth * 9/16;
     NSUInteger i;
     for (i=0;i < pNum; i++){
         unsigned int n = i+1;
@@ -35,8 +41,8 @@ const NSUInteger pNum = 4;
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         
         CGRect rect = imageView.frame;
-        rect.size.height = pHeight;
-        rect.size.width = pWidth;
+        rect.size.height = _pHeight;
+        rect.size.width = _pWidth;
         imageView.frame = rect;
         imageView.tag = n;
         
@@ -64,12 +70,12 @@ const NSUInteger pNum = 4;
             frame.origin = CGPointMake(px, py);
             view.frame = frame;
             
-            px += (pWidth);
+            px += (_pWidth);
         }
     }
     
     // UIScrollViewのコンテンツサイズを画像のtotalサイズに合わせる
-    [_scrollView setContentSize:CGSizeMake( pWidth * pNum, pHeight)];
+    [_scrollView setContentSize:CGSizeMake( _pWidth * pNum, _pHeight)];
 }
 
 - (void)didReceiveMemoryWarning {
