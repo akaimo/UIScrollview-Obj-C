@@ -16,10 +16,6 @@
 
 @end
 
-// ページの高さ
-//const CGFloat pHeight = 300.0;
-// ページの幅
-//const CGFloat pWidth  = 375.0;
 // Totalのページ数
 const NSUInteger pNum = 4;
 
